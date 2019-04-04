@@ -4,13 +4,17 @@
 
 This plugin helps with chunk naming in webpack. **To use it you need at least webpack 4.1**  
 
+
+**** This has been MODIFIED to include CSS/Extract support
+
+
 ## Install
 ```
-npm install webpack-chunk-rename-plugin --save-dev
+npm install yellengineering/webpack-chunk-rename-plugin --save-dev
 ```  
 or if you are using yarn
 ```
-yarn add webpack-chunk-rename-plugin --dev
+yarn add yellengineering/webpack-chunk-rename-plugin --dev
 ```
 
 ## Usage
