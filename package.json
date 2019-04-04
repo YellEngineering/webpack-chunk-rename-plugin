@@ -1,5 +1,5 @@
 {
-  "name": "webpack-chunk-rename-plugin",
+  "name": "yell-webpack-chunk-rename-plugin",
   "version": "1.0.3",
   "main": "index.js",
   "keywords": [
@@ -29,5 +29,6 @@
   },
   "scripts": {
     "lint": "yarn && yarn eslint ."
-  }
+  },
+  "dependencies": {}
 }
