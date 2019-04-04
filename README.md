@@ -2,16 +2,16 @@
 [![node](https://img.shields.io/node/v/webpack-chunk-rename-plugin.svg?style=flat-square)](https://www.npmjs.com/package/webpack-chunk-rename-plugin)
 # webpack-chunk-rename-plugin
 
-This plugin helps with chunk naming in webpack. **To use it you need at least webpack 4.1**  
+This plugin helps with chunk naming in webpack. **To use it you need at least webpack 4.1**
 
 
-**** This has been MODIFIED to include CSS/Extract support
+## This has been MODIFIED to include CSS/Extract support
 
 
 ## Install
 ```
 npm install yellengineering/webpack-chunk-rename-plugin --save-dev
-```  
+```
 or if you are using yarn
 ```
 yarn add yellengineering/webpack-chunk-rename-plugin --dev
@@ -27,7 +27,7 @@ module.exports = {
     new ChunkRenamePlugin(objectWithOptions),
   ],
 }
-```  
+```
 Option|Type|Description
 --|--|--
 `initialChunksWithEntry`|`boolean\|string`|Rename all chunks which are satisfy the condition `chunk.hasEntryModule() && chunk.isOnlyInitial`. If `true` is passed then use `output.filename` option, if string is passed, use it as chunk name i.e. you can use all placeholder for chunk naming like `[hash]`,`[name]`,`[chunkhash]` etc.
@@ -57,5 +57,5 @@ module.exports = {
 ```
 
 ## Motivation
-Currently if you want to move webpack runtime into the separate file you will use [`optimization.runtimeChunk`](https://webpack.js.org/plugins/split-chunks-plugin/#optimization-runtimechunk) option, you all of the chunks, which do not have runtime in them will use `output.chunkFilename` for the filename, event if it contains entry. See [issue](https://github.com/webpack/webpack/issues/6598).  
+Currently if you want to move webpack runtime into the separate file you will use [`optimization.runtimeChunk`](https://webpack.js.org/plugins/split-chunks-plugin/#optimization-runtimechunk) option, you all of the chunks, which do not have runtime in them will use `output.chunkFilename` for the filename, event if it contains entry. See [issue](https://github.com/webpack/webpack/issues/6598).
 There are a few plugins for chunk renaming, however i haven't found plugin that is compatible with webpack 4.
